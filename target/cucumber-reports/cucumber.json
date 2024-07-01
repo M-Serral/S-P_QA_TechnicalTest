@@ -1,0 +1,223 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9080643253,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I access to the demoQA page",
+            "match": {
+              "location": "TextBoxSteps.iAccessToDemoQAPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-07-01T16:52:15.739Z",
+        "line": 13,
+        "name": "Check that results contain the input values",
+        "description": "",
+        "id": "sportstab;check-that-results-contain-the-input-values;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1112904890,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TextBoxSteps.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "I fill input fields with these values \"test user\", \"test@blabla.com\", \"C. Dobla, 5, 28054 Madrid, Spain\", \"Street X, 28013 Madrid, Spain\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "I click in Submit button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "results match the input data",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6499801407,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I access to the demoQA page",
+            "match": {
+              "location": "TextBoxSteps.iAccessToDemoQAPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-07-01T16:52:26.092Z",
+        "line": 14,
+        "name": "Check that results contain the input values",
+        "description": "",
+        "id": "sportstab;check-that-results-contain-the-input-values;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1289515973,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TextBoxSteps.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "I fill input fields with these values \"John Smith\", \"john.smith@mailinator.com\", \"Street Smith 3, London, UK\", \"Street Smith 6, London, UK\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "I click in Submit button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "results match the input data",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4210561640,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I access to the demoQA page",
+            "match": {
+              "location": "TextBoxSteps.iAccessToDemoQAPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-07-01T16:52:33.890Z",
+        "line": 16,
+        "name": "Check that after pressing Submit button, the email input has some error indicator and the fact that there is no output produced",
+        "description": "",
+        "id": "sportstab;check-that-after-pressing-submit-button--the-email-input-has-some-error-indicator-and-the-fact-that-there-is-no-output-produced",
+        "after": [
+          {
+            "result": {
+              "duration": 972465951,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TextBoxSteps.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "I fill Email input with \"thisisnotanemail\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "Email input has some error indicator",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "check that there is no output produced",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "SportsTab",
+    "description": "",
+    "id": "sportstab",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/TextBox.feature",
+    "tags": []
+  }
+]
