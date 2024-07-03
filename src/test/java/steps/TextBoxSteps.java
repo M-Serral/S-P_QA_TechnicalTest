@@ -12,13 +12,12 @@ import stepDependencies.InputValues;
 
 public class TextBoxSteps {
 
-    private WebDriver driver;
     private TextBoxPage textBoxPage;
     final InputValues inputValues = new InputValues();
 
     @Given("I access to the demoQA page")
     public void iAccessToDemoQAPage() {
-        driver = TextBoxPage.initializeDriver();
+        WebDriver driver = TextBoxPage.initializeDriver();
         textBoxPage = new TextBoxPage(driver);
         String provisionalBaseUrl = "https://demoqa.com/text-box";
         textBoxPage.loadPage(provisionalBaseUrl);
