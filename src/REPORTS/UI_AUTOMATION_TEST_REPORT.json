@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8197138224,
+              "duration": 6925867442,
               "status": "passed"
             },
             "line": 5,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-07-03T15:35:16.366Z",
+        "start_timestamp": "2024-07-03T15:30:07.799Z",
         "line": 13,
         "name": "Check that results contain the input values",
         "description": "",
@@ -32,7 +32,7 @@
         "after": [
           {
             "result": {
-              "duration": 1569161656,
+              "duration": 1436082952,
               "status": "passed"
             },
             "match": {
@@ -45,7 +45,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2596928430,
+              "duration": 2956066937,
               "status": "passed"
             },
             "line": 8,
@@ -75,7 +75,7 @@
           },
           {
             "result": {
-              "duration": 290137639,
+              "duration": 750715391,
               "status": "passed"
             },
             "line": 9,
@@ -87,7 +87,7 @@
           },
           {
             "result": {
-              "duration": 236389160,
+              "duration": 391805310,
               "status": "passed"
             },
             "line": 10,
@@ -108,7 +108,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9091428450,
+              "duration": 5150619616,
               "status": "passed"
             },
             "line": 5,
@@ -121,7 +121,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-07-03T15:35:29.345Z",
+        "start_timestamp": "2024-07-03T15:30:20.404Z",
         "line": 14,
         "name": "Check that results contain the input values",
         "description": "",
@@ -129,7 +129,7 @@
         "after": [
           {
             "result": {
-              "duration": 1416928913,
+              "duration": 1100589872,
               "status": "passed"
             },
             "match": {
@@ -142,7 +142,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2218976833,
+              "duration": 1330891934,
               "status": "passed"
             },
             "line": 8,
@@ -172,7 +172,7 @@
           },
           {
             "result": {
-              "duration": 348066324,
+              "duration": 251730716,
               "status": "passed"
             },
             "line": 9,
@@ -184,7 +184,7 @@
           },
           {
             "result": {
-              "duration": 248062157,
+              "duration": 177318527,
               "status": "passed"
             },
             "line": 10,
@@ -205,7 +205,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5035514716,
+              "duration": 5081263863,
               "status": "passed"
             },
             "line": 5,
@@ -218,7 +218,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-07-03T15:35:42.671Z",
+        "start_timestamp": "2024-07-03T15:30:28.418Z",
         "line": 16,
         "name": "Check that if you write an invalid email, after pressing Submit button, the email input has some error indicator",
         "description": "",
@@ -226,7 +226,7 @@
         "after": [
           {
             "result": {
-              "duration": 2725873970,
+              "duration": 1139096338,
               "status": "passed"
             },
             "match": {
@@ -239,7 +239,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1429081184,
+              "duration": 961732237,
               "status": "passed"
             },
             "line": 17,
@@ -257,7 +257,7 @@
           },
           {
             "result": {
-              "duration": 525786369,
+              "duration": 226048457,
               "status": "passed"
             },
             "line": 18,
@@ -269,7 +269,7 @@
           },
           {
             "result": {
-              "duration": 91066843,
+              "duration": 59534972,
               "status": "passed"
             },
             "line": 19,
@@ -290,7 +290,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5610360267,
+              "duration": 3939752917,
               "status": "passed"
             },
             "line": 5,
@@ -303,7 +303,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-07-03T15:35:52.482Z",
+        "start_timestamp": "2024-07-03T15:30:35.888Z",
         "line": 21,
         "name": "Check that if you write an invalid email, after pressing Submit button, there is no output produced",
         "description": "",
@@ -311,7 +311,7 @@
         "after": [
           {
             "result": {
-              "duration": 2165354347,
+              "duration": 915381729,
               "status": "passed"
             },
             "match": {
@@ -324,7 +324,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1253193205,
+              "duration": 883315441,
               "status": "passed"
             },
             "line": 22,
@@ -342,7 +342,7 @@
           },
           {
             "result": {
-              "duration": 272523556,
+              "duration": 201273092,
               "status": "passed"
             },
             "line": 23,
@@ -354,7 +354,7 @@
           },
           {
             "result": {
-              "duration": 5046063104,
+              "duration": 5067333492,
               "status": "passed"
             },
             "line": 24,
@@ -375,7 +375,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4948602436,
+              "duration": 4349155032,
               "status": "passed"
             },
             "line": 5,
@@ -388,7 +388,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-07-03T15:36:06.833Z",
+        "start_timestamp": "2024-07-03T15:30:46.899Z",
         "line": 26,
         "name": "Check that if you write an invalid email, after writing a valid email, after pressing Submit button, the invalid email is not shown",
         "description": "",
@@ -396,7 +396,7 @@
         "after": [
           {
             "result": {
-              "duration": 1604681136,
+              "duration": 1312170128,
               "status": "passed"
             },
             "match": {
@@ -409,7 +409,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1821619703,
+              "duration": 1648220087,
               "status": "passed"
             },
             "line": 27,
@@ -427,7 +427,7 @@
           },
           {
             "result": {
-              "duration": 302883807,
+              "duration": 240776308,
               "status": "passed"
             },
             "line": 28,
@@ -439,7 +439,7 @@
           },
           {
             "result": {
-              "duration": 219738641,
+              "duration": 94079796,
               "status": "passed"
             },
             "line": 29,
@@ -451,7 +451,7 @@
           },
           {
             "result": {
-              "duration": 1465054557,
+              "duration": 566882852,
               "status": "passed"
             },
             "line": 30,
@@ -469,7 +469,7 @@
           },
           {
             "result": {
-              "duration": 790146820,
+              "duration": 176940074,
               "status": "passed"
             },
             "line": 31,
@@ -481,7 +481,7 @@
           },
           {
             "result": {
-              "duration": 195382730,
+              "duration": 89130113,
               "status": "passed"
             },
             "line": 32,

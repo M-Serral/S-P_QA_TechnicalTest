@@ -17,8 +17,8 @@ import java.nio.file.Paths;
 
 public class TextBoxPage {
 
-    public static WebDriver driver;
-    protected static WebDriverWait wait;
+    public WebDriver driver;
+    protected WebDriverWait wait;
 
     @FindBy(id = "userName")
     private WebElement inpt_userName;
@@ -50,19 +50,15 @@ public class TextBoxPage {
     @FindBy(xpath = "//*[@id=\"output\"]/div/p[3]")
     private WebElement txt_currentAddress;
 
-
-
-
     public TextBoxPage(WebDriver driver) {
         this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         PageFactory.initElements(driver, this);
     }
 
-    public static void loadPage(String url) {
+    public static WebDriver initializeDriver() {
         // Define the path to your chromedriver
         String driverPath = Paths.get("drivers", "chromedriver").toString();
-
-        // Set the system property for chromedriver
         System.setProperty("webdriver.chrome.driver", driverPath);
 
         // Set ChromeOptions to avoid WebSocket connection issues
@@ -74,10 +70,13 @@ public class TextBoxPage {
         options.addArguments("--remote-allow-origins=*");
 
         // Initialize the ChromeDriver with options
-        driver = new ChromeDriver(options);
-        driver.get(url);
+        WebDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        return driver;
+    }
+
+    public void loadPage(String url) {
+        driver.get(url);
     }
 
     public void fillInputValues(String fullName, String email, String currentAddress, String permanentAddress) {
@@ -105,7 +104,6 @@ public class TextBoxPage {
         Assert.assertEquals("permanent address do not match", extractTextAfterColon(txt_permanentAddress.getText()), permanentAddress);
     }
 
-
     public String extractTextAfterColon(String text) {
         if (text.contains(":")) {
             return text.split(":", 2)[1].trim();
@@ -113,7 +111,31 @@ public class TextBoxPage {
         return text;
     }
 
+    public boolean isEmailErrorDisplayed() {
+        return inpt_userEmail.getAttribute("class").contains("field-error");
+    }
 
+    public void deleteEmailInput() {
+        inpt_userEmail.clear();
+    }
+
+    public void checkNoOutputForInvalidEmail() {
+        // Wait for a short duration to ensure the page has time to update
+        wait.withTimeout(Duration.ofSeconds(1));
+
+        // Check that the output box does not contain the email field for invalid input
+        boolean isEmailOutputPresent = !driver.findElements(By.id("email")).isEmpty();
+        Assert.assertFalse("Invalid email output should not be present for invalid input", isEmailOutputPresent);
+    }
+
+    public String checkNoOutputChangeForInvalidEmail() {
+        wait.withTimeout(Duration.ofSeconds(1));
+        return extractTextAfterColon(txt_email.getText());
+    }
+
+    public String getEmailOutput() {
+        return txt_email.getText();
+    }
 
     public void quitDriver() {
         if (driver != null) {
