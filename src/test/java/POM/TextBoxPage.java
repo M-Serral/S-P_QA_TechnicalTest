@@ -130,6 +130,7 @@ public class TextBoxPage {
         return extractTextAfterColon(txt_email.getText());
     }
 
+
     public void quitDriver() {
         if (driver != null) {
             driver.quit();
