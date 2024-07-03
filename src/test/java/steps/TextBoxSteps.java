@@ -15,7 +15,6 @@ public class TextBoxSteps {
     private WebDriver driver;
     private TextBoxPage textBoxPage;
     final InputValues inputValues = new InputValues();
-    private String initialEmailOutput;
 
     @Given("I access to the demoQA page")
     public void iAccessToDemoQAPage() {

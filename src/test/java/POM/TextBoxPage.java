@@ -35,9 +35,6 @@ public class TextBoxPage {
     @FindBy(id = "submit")
     private WebElement btn_submit;
 
-    @FindBy(xpath = "//*[@id=\"output\"]/div")
-    private WebElement box_values;
-
     @FindBy(id = "name")
     private WebElement txt_name;
 
@@ -131,10 +128,6 @@ public class TextBoxPage {
     public String checkNoOutputChangeForInvalidEmail() {
         wait.withTimeout(Duration.ofSeconds(1));
         return extractTextAfterColon(txt_email.getText());
-    }
-
-    public String getEmailOutput() {
-        return txt_email.getText();
     }
 
     public void quitDriver() {
